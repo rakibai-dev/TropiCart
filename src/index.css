@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "tropical-light";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  /* Surfaces */
+  --color-base-100: oklch(98% 0.02 100);   /* warm sand */
+  --color-base-200: oklch(95% 0.03 100);
+  --color-base-300: oklch(91% 0.04 100);
+  --color-base-content: oklch(26% 0.04 220);
+
+  /* Brand */
+  --color-primary: oklch(72% 0.18 170);    /* lagoon teal */
+  --color-primary-content: oklch(18% 0.03 200);
+
+  --color-secondary: oklch(78% 0.16 75);   /* mango */
+  --color-secondary-content: oklch(24% 0.05 65);
+
+  --color-accent: oklch(74% 0.17 145);     /* palm green */
+  --color-accent-content: oklch(20% 0.04 145);
+
+  /* Utility */
+  --color-neutral: oklch(39% 0.04 230);    /* deep ocean slate */
+  --color-neutral-content: oklch(96% 0.01 95);
+
+  --color-info: oklch(74% 0.14 230);
+  --color-info-content: oklch(22% 0.04 230);
+
+  --color-success: oklch(76% 0.16 155);
+  --color-success-content: oklch(22% 0.05 155);
+
+  --color-warning: oklch(83% 0.16 85);
+  --color-warning-content: oklch(28% 0.06 80);
+
+  --color-error: oklch(66% 0.20 28);
+  --color-error-content: oklch(97% 0.01 20);
+
+  /* Shape */
+  --radius-selector: 0.75rem;
+  --radius-field: 0.65rem;
+  --radius-box: 0.9rem;
+  --border: 1px;
+}

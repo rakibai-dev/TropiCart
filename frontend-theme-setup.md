@@ -1,0 +1,3 @@
+- This Vite React app uses Tailwind CSS v4 with DaisyUI v5 plugin syntax directly in src/index.css (`@plugin "daisyui"` and custom theme block).
+- DaisyUI must remain in package.json dependencies for CSS build to succeed.
+- Main UI entry points: src/App.jsx (page composition), src/App.css (page-level styles), src/index.css (global theme tokens).
