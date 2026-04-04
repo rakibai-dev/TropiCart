@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import Benefits from "./components/landing/Benefits";
 import Categories from "./components/landing/Categories";
 import FinalCta from "./components/landing/FinalCta";
@@ -54,6 +55,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
