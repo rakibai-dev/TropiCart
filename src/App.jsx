@@ -1,6 +1,7 @@
 import "./App.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import * as Sentry from '@sentry/react';
 import Benefits from "./components/landing/Benefits";
 import Categories from "./components/landing/Categories";
 import FinalCta from "./components/landing/FinalCta";
@@ -8,6 +9,18 @@ import Footer from "./components/landing/Footer";
 import FeaturedProducts from "./components/landing/FeaturedProducts";
 import Hero from "./components/landing/Hero";
 import Testimonials from "./components/landing/Testimonials";
+
+function ErrorButton() {
+  return (
+    <button
+      onClick={() => {
+        throw new Error('This is your first error!');
+      }}
+    >
+      Break the world
+    </button>
+  );
+}
 
 export default function App() {
   return (
@@ -58,6 +71,7 @@ export default function App() {
       <Footer />
       <Analytics />
       <SpeedInsights />
+      <ErrorButton />
     </div>
   );
 }
