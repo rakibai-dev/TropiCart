@@ -5,9 +5,10 @@ import './index.css'
 import App from './App.jsx'
 
 Sentry.init({
-  dsn: "https://bf70e0faaf10cc8be9edae54fec213bf@o4511163523596288.ingest.us.sentry.io/4511163526217728",
+  dsn: "https://bd324b13d0aa4b7c0e83bf28d5340009@o4511163523596288.ingest.us.sentry.io/4511163821588480",
   integrations: [Sentry.browserTracingIntegration()],
   tracesSampleRate: 1.0,
+  sendDefaultPii: true,
 });
 
 
